@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Jeu de devinette</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bienvenue dans ce jeu de devinette !</h1>
+			<div class="main">
+				<p class="guess">Devine un nombre entre 1 et 100...</p>
+				<p><input type="text" id="digit"></p>
+				
+				<div id="message" class="reply"></div>
+
+				<button id="replay" class="reload">Rejouer</button>
+
+				<div class="aware">
+					<h2>Nombre d'essais restant</h2>
+					<p class="v">V</p>
+					<div class="counter" id="remain">
+						<div class="up box">
+							<div class="num one"><p>1</p></div>
+							<div class="num six"><p>6</p></div>
+							<div class="num five"><p>5</p></div>
+						</div>
+						<div class="down box">
+							<div class="num two"><p>2</p></div>
+							<div class="num three"><p>3</p></div>
+							<div class="num four"><p>4</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	    <script src="devinette.js"></script>
+	</body>
+</html>
